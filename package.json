@@ -1,0 +1,24 @@
+{
+  "name": "twitter-scraper",
+  "version": "1.0.0",
+  "description": "Advanced Twitter scraper with real-time progress updates",
+  "main": "index.js",
+  "scripts": {
+    "build": "if not exist dist mkdir dist && copy index.html dist\\ && if not exist dist\\static mkdir dist\\static && copy static\\style.css dist\\static\\",
+    "build:unix": "mkdir -p dist && cp index.html dist/ && cp -r static dist/",
+    "dev": "python app.py",
+    "start": "python app.py",
+    "clean": "if exist dist rmdir /s /q dist"
+  },
+  "keywords": [
+    "twitter",
+    "scraper",
+    "playwright",
+    "flask",
+    "real-time"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+} 
